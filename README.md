@@ -283,21 +283,6 @@ python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 ---
 
-## 11) Comandos útiles
-
-Ver tu IP:
-```powershell
-ipconfig
-```
-
-Parar backend:
-- CTRL + C
-
-Levantar backend:
-```powershell
-python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
 Levantar frontend:
 ```powershell
 npm run dev -- --host
