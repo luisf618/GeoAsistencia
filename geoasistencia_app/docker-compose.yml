@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: geoasistencia_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: geo_user
+      POSTGRES_PASSWORD: GeoPass123
+      POSTGRES_DB: geoasistencia
+    ports:
+      - "5433:5432"
+    volumes:
+      - geoasistencia_pg:/var/lib/postgresql/data
+
+volumes:
+  geoasistencia_pg:

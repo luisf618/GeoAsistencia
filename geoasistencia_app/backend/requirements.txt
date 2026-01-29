@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+
+# Seguridad / hashing
+# passlib 1.7.x aún espera bcrypt.__about__.__version__.
+# bcrypt>=4.1 removió __about__, por eso fijamos bcrypt 4.0.1.
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+
+python-jose
+pydantic
+python-dotenv

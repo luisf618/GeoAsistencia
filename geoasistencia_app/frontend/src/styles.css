@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+/* Fondo sobrio con un toque de color */
+.gradient-bg {
+  background:
+    radial-gradient(900px 520px at 15% 10%, rgba(79,70,229,0.10), transparent 60%),
+    radial-gradient(900px 520px at 85% 0%, rgba(14,165,233,0.08), transparent 55%),
+    linear-gradient(180deg, rgba(248,250,252,1), rgba(241,245,249,1));
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-semibold transition active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-500/25;
+}
+
+.btn-primary {
+  @apply btn bg-indigo-600 hover:bg-indigo-500 text-white;
+}
+
+.btn-ghost {
+  @apply btn bg-white hover:bg-slate-50 border border-slate-200 text-slate-800;
+}
+
+.btn-danger {
+  @apply btn bg-rose-600 hover:bg-rose-500 text-white;
+}
+
+.input {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-slate-900 outline-none placeholder:text-slate-400 focus:border-indigo-300 focus:ring-2 focus:ring-indigo-500/20;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold border border-slate-200 bg-slate-50 text-slate-700;
+}
+
+.table {
+  @apply w-full text-sm;
+}
+
+.table thead th {
+  @apply text-left font-semibold text-slate-700 bg-slate-50;
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid rgb(226 232 240);
+}
+
+.table tbody td {
+  @apply text-slate-700;
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid rgb(241 245 249);
+}
+
+.table tbody tr:nth-child(even) {
+  background: rgba(248,250,252,0.6);
+}
+
+.table tbody tr:hover {
+  background: rgba(238,242,255,0.55);
+}
+
+.section-title {
+  @apply text-2xl font-extrabold tracking-tight text-slate-900;
+}
+
+.muted {
+  @apply text-slate-600;
+}
