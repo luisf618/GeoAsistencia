@@ -283,19 +283,7 @@ python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 ---
 
-## 11) Checklist final (para que funcione a la primera)
-
-- [ ] BD creada + `scriptGeo.sql` ejecutado
-- [ ] Backend corre con `--host 0.0.0.0` en puerto 8000
-- [ ] PC abre `http://127.0.0.1:8000/docs`
-- [ ] Celular abre `http://TU_IP:8000/docs`
-- [ ] Firewall permite TCP 8000 (si hizo falta)
-- [ ] Flutter `baseUrl` apunta a `http://TU_IP:8000`
-- [ ] APK `app-release.apk` generado e instalado
-
----
-
-## 12) Comandos útiles
+## 11) Comandos útiles
 
 Ver tu IP:
 ```powershell
